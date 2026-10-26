@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+﻿import { Link } from 'react-router-dom'
 
 const base =
   'inline-flex items-center justify-center gap-2 text-xs uppercase tracking-[0.18em] transition-colors duration-200'
@@ -6,7 +6,7 @@ const base =
 const variants = {
   outline:
     'border border-foreground/40 px-5 py-2.5 text-foreground hover:bg-foreground hover:text-background',
-  solid: 'bg-highlight px-6 py-3.5 text-background hover:bg-foreground',
+  solid: 'bg-foreground px-8 py-3.5 text-background hover:bg-highlight',
   link: 'text-foreground hover:text-highlight',
 }
 

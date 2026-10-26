@@ -12,7 +12,7 @@ export default function Hero() {
     <section
       id="hero"
       aria-labelledby="hero-heading"
-      className="pb-16 pt-12 md:pt-16 lg:pb-24 lg:pt-20"
+      className="pb-16 pt-12 md:pt-16 lg:pb-32 lg:pt-20"
     >
       <Container className="grid items-start gap-14 lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-7">
@@ -30,7 +30,7 @@ export default function Hero() {
 
           <div className="mt-12 grid max-w-2xl gap-8 sm:grid-cols-[11rem_1fr]">
             <div>
-              <p className="text-[10px] uppercase tracking-[0.18em] text-highlight">
+              <p className="text-[10px] uppercase tracking-[0.18em] text-label">
                 Core Disciplines
               </p>
               <ul className="mt-3 space-y-1 text-sm text-muted">
@@ -78,3 +78,4 @@ export default function Hero() {
     </section>
   )
 }
+

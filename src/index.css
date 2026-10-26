@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 @import "@fontsource-variable/newsreader";
 @import "@fontsource-variable/newsreader/wght-italic.css";
 @import "@fontsource-variable/hanken-grotesk";
@@ -11,6 +11,7 @@
   --color-muted: #b7a493;
   --color-accent: #956747;
   --color-highlight: #d8c5ad;
+  --color-label: #e3a47c;
   --color-line: rgb(243 233 216 / 0.12);
 
   --font-serif: "Newsreader Variable", Georgia, serif;
