@@ -33,10 +33,10 @@ export const projects = [
     slug: 'kura-object-lab',
     title: 'KURA Object Lab',
     filter: 'brand',
-    year: '2022',
+    year: '2023',
     category: 'Brand Architecture / Tactile Print / Atelier Collateral',
     shortDescription:
-      'Identity for a bespoke joinery workshop, built around uncoated cotton cardstocks and blind embossing. (Placeholder text)',
+      'Identity for a bespoke joinery workshop uniting Kyoto joinery philosophy with Scandinavian restraint. Uncoated cotton cardstocks and blind embossing.',
   },
   {
     id: '004',
@@ -46,7 +46,7 @@ export const projects = [
     year: '2023',
     category: 'Identity & Motion Direction / Billboard System',
     shortDescription:
-      'Visual identity and animated titles for an independent 35mm film revival house, pairing high-contrast typography with grainy projection stills.',
+      'Visual voice and animated titles for an independent 35mm film revival house. High-contrast typography paired with grainy projection stills.',
   },
   {
     id: '005',

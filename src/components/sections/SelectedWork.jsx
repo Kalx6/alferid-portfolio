@@ -1,10 +1,16 @@
 ﻿import { useState } from 'react'
 import Container from '../ui/Container'
+import ProjectCard from '../ui/ProjectCard'
 import { filters, projects } from '../../data/projects'
+
+// Editorial rhythm after the featured card: 7/5, 5/7, then repeats.
+const rowSpans = ['lg:col-span-7', 'lg:col-span-5', 'lg:col-span-5', 'lg:col-span-7']
+const spanFor = (index) => (index === 0 ? 'lg:col-span-12' : rowSpans[(index - 1) % 4])
 
 export default function SelectedWork() {
   const [active, setActive] = useState('all')
-  const visible = active === 'all' ? projects : projects.filter((p) => p.filter === active)
+  const showAll = active === 'all'
+  const visible = showAll ? projects : projects.filter((p) => p.filter === active)
 
   return (
     <section id="work" aria-labelledby="work-heading" className="py-24 lg:py-40">
@@ -41,14 +47,23 @@ export default function SelectedWork() {
           </div>
         </div>
 
-        {/* TEMPORARY: replaced by the real project grid next */}
-        <ul aria-live="polite" className="mt-10 space-y-2 text-muted">
-          {visible.map((p) => (
-            <li key={p.id}>
-              {p.id} &mdash; {p.title} ({p.year})
-            </li>
+        <div
+          aria-live="polite"
+          className={
+            showAll
+              ? 'mt-10 grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-8'
+              : 'mt-10 grid gap-6 md:grid-cols-2 lg:gap-8'
+          }
+        >
+          {visible.map((project, index) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              variant={showAll && index === 0 ? 'featured' : 'standard'}
+              className={showAll ? spanFor(index) : ''}
+            />
           ))}
-        </ul>
+        </div>
       </Container>
     </section>
   )
