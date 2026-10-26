@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import "@fontsource-variable/newsreader";
+@import "@fontsource-variable/newsreader/wght-italic.css";
+@import "@fontsource-variable/hanken-grotesk";
+
+@theme {
+  --color-background: #211914;
+  --color-surface: #30231d;
+  --color-surface-raised: #3a2b23;
+  --color-foreground: #f3e9d8;
+  --color-muted: #b7a493;
+  --color-accent: #956747;
+  --color-highlight: #d8c5ad;
+  --color-line: rgb(243 233 216 / 0.12);
+
+  --font-serif: "Newsreader Variable", Georgia, serif;
+  --font-sans: "Hanken Grotesk Variable", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-highlight);
+    outline-offset: 3px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
