@@ -1,6 +1,7 @@
 ﻿import { useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
 import Home from './pages/Home'
 import ProjectDetail from './pages/ProjectDetail'
 import NotFound from './pages/NotFound'
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/work/:slug" element={<ProjectDetail />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </>
   )
 }
