@@ -12,8 +12,8 @@ export const site = {
     intro:
       'Operating at the intersection of Swiss structural rigor and contemporary sensory restraint. Collaborating with independent studios, emerging founders, and cultural institutions globally.',
     featured: {
-      label: 'Case Study 01 // AURA Botanic Lab',
-      subtitle: 'Identity & Physical Packaging System',
+      label: 'Featured Project // OMER Digital Studio',
+      subtitle: 'Logo & Signage Mockup',
     },
   },
 
@@ -43,3 +43,4 @@ export const site = {
     ],
   },
 }
+

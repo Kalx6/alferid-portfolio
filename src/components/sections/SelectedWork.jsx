@@ -3,25 +3,25 @@ import Container from '../ui/Container'
 import ProjectCard from '../ui/ProjectCard'
 import { filters, projects } from '../../data/projects'
 
-// Editorial rhythm after the featured card: 7/5, 5/7, then repeats.
+// After the featured card, rows alternate 7/5 then 5/7.
 const rowSpans = ['lg:col-span-7', 'lg:col-span-5', 'lg:col-span-5', 'lg:col-span-7']
-const spanFor = (index) => (index === 0 ? 'lg:col-span-12' : rowSpans[(index - 1) % 4])
 
 export default function SelectedWork() {
   const [active, setActive] = useState('all')
   const showAll = active === 'all'
   const visible = showAll ? projects : projects.filter((p) => p.filter === active)
 
+  // An even count would leave one card alone in the last row, so it becomes full width.
+  const lastIsFeatured = showAll && visible.length > 2 && visible.length % 2 === 0
+
   return (
     <section id="work" aria-labelledby="work-heading" className="py-24 lg:py-40">
       <Container>
         <div className="flex flex-col gap-8 border-b border-line pb-8 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-[10px] uppercase tracking-[0.18em] text-label">
-              Curated Works [2022&ndash;2026]
-            </p>
+            <p className="text-[10px] uppercase tracking-[0.18em] text-label">My Work</p>
             <h2 id="work-heading" className="mt-2 font-serif text-5xl tracking-[-0.02em] lg:text-6xl">
-              Selected Archives
+              Selected Work
             </h2>
           </div>
 
@@ -55,14 +55,17 @@ export default function SelectedWork() {
               : 'mt-10 grid gap-6 md:grid-cols-2 lg:gap-8'
           }
         >
-          {visible.map((project, index) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              variant={showAll && index === 0 ? 'featured' : 'standard'}
-              className={showAll ? spanFor(index) : ''}
-            />
-          ))}
+          {visible.map((project, index) => {
+            const isFeatured = showAll && (index === 0 || (lastIsFeatured && index === visible.length - 1))
+            return (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                variant={isFeatured ? 'featured' : 'standard'}
+                className={showAll ? (isFeatured ? 'lg:col-span-12' : rowSpans[(index - 1) % 4]) : ''}
+              />
+            )
+          })}
         </div>
       </Container>
     </section>

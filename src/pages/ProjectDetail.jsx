@@ -11,8 +11,10 @@ export default function ProjectDetail() {
 
   if (!project) return <NotFound />
 
+  const { cover } = project
+
   return (
-    <main className="py-24">
+    <main className="py-16 lg:py-24">
       <Container>
         <Link
           to="/#work"
@@ -20,15 +22,31 @@ export default function ProjectDetail() {
         >
           <ArrowLeft size={14} aria-hidden="true" /> Back to work
         </Link>
-        <p className="mt-10 text-[11px] uppercase tracking-[0.14em] text-muted">
-          Index {project.id} &middot; {project.year}
-        </p>
-        <h1 className="mt-3 font-serif text-5xl lg:text-7xl">{project.title}</h1>
-        <p className="mt-4 text-[11px] font-medium uppercase tracking-[0.14em] text-label">
-          {project.category}
-        </p>
-        <p className="mt-8 max-w-xl leading-relaxed text-muted">{project.shortDescription}</p>
-        <p className="mt-10 text-sm text-muted">Full case study coming soon (placeholder).</p>
+
+        <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:gap-12">
+          <div className="lg:col-span-4">
+            <p className="text-[11px] uppercase tracking-[0.14em] text-muted">
+              Index {project.id}
+              {project.year ? ` \u00b7 ${project.year}` : ''}
+            </p>
+            <h1 className="mt-3 font-serif text-4xl leading-tight lg:text-5xl">{project.title}</h1>
+            <p className="mt-4 text-[11px] font-medium uppercase tracking-[0.14em] text-label">
+              {project.category}
+            </p>
+            <p className="mt-6 leading-relaxed text-muted">{project.shortDescription}</p>
+          </div>
+
+          <div className="lg:col-span-8">
+            <div className={cover.tone === 'light' ? 'bg-white' : 'bg-surface-raised'}>
+              <img
+                src={cover.src}
+                alt={cover.alt}
+                style={{ aspectRatio: cover.ratio }}
+                className="mx-auto max-h-[85vh] w-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
       </Container>
     </main>
   )

@@ -1,12 +1,30 @@
 ﻿import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
-import Placeholder from '../ui/Placeholder'
+
+function Cover({ project }) {
+  const { title, cover } = project
+  const background = cover.tone === 'light' ? 'bg-white' : 'bg-surface-raised'
+
+  return (
+    <div className={`overflow-hidden ${background}`}>
+      <img
+        src={cover.src}
+        alt={cover.alt}
+        title={title}
+        loading="lazy"
+        decoding="async"
+        style={{ aspectRatio: cover.ratio }}
+        className="max-h-[44rem] w-full object-contain transition-transform duration-500 motion-safe:group-hover:scale-[1.03]"
+      />
+    </div>
+  )
+}
 
 function MetaRow({ id, year }) {
   return (
     <div className="flex items-baseline justify-between text-[11px] uppercase tracking-[0.14em] text-muted">
       <span>Index {id}</span>
-      <span>{year}</span>
+      {year && <span>{year}</span>}
     </div>
   )
 }
@@ -21,17 +39,13 @@ export default function ProjectCard({ project, variant = 'standard', className =
     </Link>
   )
 
-  const imageClasses =
-    'transition-transform duration-500 motion-safe:group-hover:scale-[1.03] ' +
-    (featured ? 'aspect-[16/10]' : 'aspect-[4/3]')
-
   if (featured) {
     return (
       <article
         className={`group relative border border-line bg-surface/40 p-2 transition-colors duration-200 focus-within:border-highlight/40 hover:border-highlight/30 lg:grid lg:grid-cols-12 ${className}`}
       >
-        <div className="overflow-hidden lg:col-span-8">
-          <Placeholder label={`${title} cover`} className={imageClasses} />
+        <div className="lg:col-span-8">
+          <Cover project={project} />
         </div>
         <div className="flex flex-col justify-center gap-5 p-6 lg:col-span-4 lg:p-10">
           <MetaRow id={id} year={year} />
@@ -43,9 +57,9 @@ export default function ProjectCard({ project, variant = 'standard', className =
           </p>
           <p className="leading-relaxed text-muted">{shortDescription}</p>
           <div className="flex items-center justify-between gap-4 border-t border-line pt-5 text-[11px] uppercase tracking-[0.14em]">
-            <span className="text-muted">{location}</span>
+            {location ? <span className="text-muted">{location}</span> : <span />}
             <span className="inline-flex items-center gap-2 text-foreground">
-              View Case Study <ArrowRight size={13} aria-hidden="true" />
+              View Project <ArrowRight size={13} aria-hidden="true" />
             </span>
           </div>
         </div>
@@ -57,9 +71,7 @@ export default function ProjectCard({ project, variant = 'standard', className =
     <article
       className={`group relative flex h-full flex-col border border-line bg-surface/40 p-2 transition-colors duration-200 focus-within:border-highlight/40 hover:border-highlight/30 ${className}`}
     >
-      <div className="overflow-hidden">
-        <Placeholder label={`${title} cover`} className={imageClasses} />
-      </div>
+      <Cover project={project} />
       <div className="mt-auto flex flex-col gap-3 px-4 pb-4 pt-8">
         <MetaRow id={id} year={year} />
         <h3 className="font-serif text-2xl leading-tight lg:text-3xl">{titleLink}</h3>

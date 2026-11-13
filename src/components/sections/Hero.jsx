@@ -2,7 +2,6 @@
 import { ArrowRight, ArrowUpRight } from 'lucide-react'
 import Container from '../ui/Container'
 import Button from '../ui/Button'
-import Placeholder from '../ui/Placeholder'
 import { site } from '../../data/site'
 
 export default function Hero() {
@@ -53,12 +52,18 @@ export default function Hero() {
         </div>
 
         <aside className="lg:col-span-5">
-          {/* TODO: point this at /work/aura-botanic-lab once case-study routes exist */}
           <Link
-            to="/#work"
+            to="/work/omer-digital-studio"
             className="group block border border-line bg-surface p-2 transition-colors duration-200 hover:border-highlight/40"
           >
-            <Placeholder label="Case study cover" className="aspect-[4/5]" />
+            <img
+              src="/projects/omer-digital-studio.jpg"
+              alt="OMER Digital Studio logo mounted on a wood-panelled office wall"
+              width="1280"
+              height="960"
+              fetchPriority="high"
+              className="aspect-[4/5] w-full object-cover object-center"
+            />
             <div className="flex items-center justify-between gap-4 px-3 py-4">
               <div>
                 <p className="text-[10px] uppercase tracking-[0.18em] text-foreground">
@@ -78,4 +83,3 @@ export default function Hero() {
     </section>
   )
 }
-
