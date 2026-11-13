@@ -1,15 +1,15 @@
 ﻿// Placeholder content from the Stitch mockup: replace with verified contact details.
 export const contact = {
-  label: 'Direct Dialogue',
-  title: 'Initiate a Commission',
+  label: 'Let’s Connect',
+  title: 'Start a Conversation',
   intro:
-    'Currently accepting select commercial and cultural projects for Q4 2026 / Q1 2027. Please outline your timeline, scope, and ambitions.',
+    'Open for work, creative collaborations, and meaningful projects. Whether you have a clear vision or just an idea, I’d love to hear about it. Share your thoughts, goals, and timeline, and let’s create something meaningful together.',
   email: 'hello@alferidmeded.com',
-  studio: 'Zurich / Berlin',
-  timezone: 'CET (UTC +1)',
+  studio: 'Ethiopia',
+  timezone: 'EAT (UTC +3)',
   response: {
-    title: 'Response Commitment',
-    text: 'All detailed inquiries are reviewed and addressed within 48 business hours with an initial estimation matrix.',
+    title: 'Response Time',
+    text: 'Every inquiry matters. I aim to respond to all messages within 48 business hours to discuss your ideas and explore how we can work together.',
   },
   disciplines: [
     'Full Brand Identity System',

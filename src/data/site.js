@@ -2,10 +2,10 @@
 export const site = {
   name: 'Alferid Meded',
   tagline: 'Studio Archive / 2026',
-  location: 'Zurich & Berlin', // placeholder
+  location: 'Addis Abeba Ethiopia', // placeholder
 
   hero: {
-    availability: 'Open for commissions Q4 2026 / Q1 2027',
+    availability: "Let's Work Together",
     headline:
       'Independent Designer shaping brand systems, tactile print, and expressive visual narratives.',
     disciplines: ['Brand Identity', 'Typographic Systems', 'Editorial Art Direction'],
@@ -16,12 +16,6 @@ export const site = {
       subtitle: 'Logo & Signage Mockup',
     },
   },
-
-  stats: [
-    { label: 'Experience Span', value: '10+ Years Crafting Identities' },
-    { label: 'Archival Works', value: '40+ Global Commissions' },
-    { label: 'Studio Tenet', value: 'Tactile Precision & Systems' },
-  ],
 
   philosophy: {
     label: 'Guiding Philosophy',
@@ -43,4 +37,5 @@ export const site = {
     ],
   },
 }
+
 
