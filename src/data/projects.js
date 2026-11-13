@@ -14,7 +14,7 @@ export const projects = [
     category: 'Logo Design / Signage Mockup',
     shortDescription: 'Logo for a digital studio, shown as a 3D sign on an office wall.',
     cover: {
-      src: '/projects/omer-digital-studio.jpg',
+      src: '/images/omer-digital-studio.jpg',
       alt: 'OMER Digital Studio logo mounted on a wood-panelled office wall',
       ratio: '4 / 3',
       tone: 'dark',
@@ -29,7 +29,7 @@ export const projects = [
     shortDescription:
       'Logo, color palette, typeface, pattern, and app icon for a fitness brand.',
     cover: {
-      src: '/projects/peakfit-fitness.jpg',
+      src: '/images/peakfit-fitness.jpg',
       alt: 'PeakFit Fitness brand board with logo variations, colors, typeface, pattern, and app icon',
       ratio: '8 / 7',
       tone: 'light',
@@ -44,7 +44,7 @@ export const projects = [
     shortDescription:
       'Product poster for a clothing brand, listing its categories and how to order.',
     cover: {
-      src: '/projects/urban-wear-ethiopia.jpg',
+      src: '/images/urban-wear-ethiopia.jpg',
       alt: 'Urban Wear Ethiopia poster with product categories and outfit photos',
       ratio: '4 / 5',
       tone: 'dark',
@@ -59,7 +59,7 @@ export const projects = [
     shortDescription:
       'Service poster for a digital marketing agency, with a dashboard mockup and contact details.',
     cover: {
-      src: '/projects/eey-digital-agency.jpg',
+      src: '/images/eey-digital-agency.jpg',
       alt: 'E.E.Y Digital Marketing Agency poster listing web, content, social media, video, and design services',
       ratio: '4 / 5',
       tone: 'dark',
@@ -74,7 +74,7 @@ export const projects = [
     shortDescription:
       'Logo, app icon, color palette, and storefront sign for a delivery brand.',
     cover: {
-      src: '/projects/go4-delivery.jpg',
+      src: '/images/go4-delivery.jpg',
       alt: 'GO4 Delivery logo in several colorways with app icon, color palette, and storefront sign',
       ratio: '1080 / 1130',
       tone: 'light',
@@ -88,7 +88,7 @@ export const projects = [
     category: 'Logo Design',
     shortDescription: 'Logo for a healthcare management system.',
     cover: {
-      src: '/projects/carecentral.jpg',
+      src: '/images/carecentral.jpg',
       alt: 'CareCentral healthcare management system logo',
       ratio: '768 / 409',
       tone: 'light',
@@ -102,7 +102,7 @@ export const projects = [
     category: 'Logo Design',
     shortDescription: 'Logo for StarMed Trading PLC, built from a star and a medical cross.',
     cover: {
-      src: '/projects/starmed-trading.jpg',
+      src: '/images/starmed-trading.jpg',
       alt: 'StarMed Trading PLC logo with a blue star and a green medical cross',
       ratio: '5 / 3',
       tone: 'light',
@@ -117,7 +117,7 @@ export const projects = [
     shortDescription:
       'Weekend offer post for a hotel, with room and gym photos and booking details.',
     cover: {
-      src: '/projects/bonroyal-hotel.jpg',
+      src: '/images/bonroyal-hotel.jpg',
       alt: 'Bonroyal Hotel weekend luxury getaway promotional post',
       ratio: '1 / 1',
       tone: 'dark',
