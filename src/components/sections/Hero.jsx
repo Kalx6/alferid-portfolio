@@ -57,7 +57,7 @@ export default function Hero() {
             className="group block border border-line bg-surface p-2 transition-colors duration-200 hover:border-highlight/40"
           >
             <img
-              src="/projects/omer-digital-studio.jpg"
+              src="/images/omer-digital-studio.jpg"
               alt="OMER Digital Studio logo mounted on a wood-panelled office wall"
               width="1280"
               height="960"
