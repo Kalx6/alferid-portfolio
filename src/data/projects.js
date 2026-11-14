@@ -19,7 +19,7 @@ export const projects = [
       'A modern and minimalist logo design created for Omer Digital Studio, focusing on creativity, digital communication, and professionalism. The design combines clean typography with a distinctive circular symbol and a subtle framing element, creating a recognizable visual identity. The white lettering contrasts with the dark circular detail, while the dimensional wall-sign mockup demonstrates how the logo could appear in a professional studio environment.',
     deliverables: ['Logo Design', 'Typography', 'Symbol Development', 'Brand Presentation Mockup'],
     cover: {
-      src: '/projects/omer-digital-studio.jpg',
+      src: '/images/omer-digital-studio.jpg',
       alt: 'Omer Digital Studio logo mounted on a wood-panelled office wall',
       ratio: '4 / 3',
       tone: 'dark',
@@ -37,7 +37,7 @@ export const projects = [
       'A fitness brand identity developed to communicate strength, energy, and performance through a bold, distinctive symbol and clean typography. The custom-style \u201cP\u201d mark incorporates a fitness-inspired dumbbell element, connecting the logo directly to the brand\u2019s industry. A strong red, off-white, and dark color palette establishes a confident visual presence. The branding presentation includes logo variations, typography selection, a repeating brand pattern, and a mobile app icon concept.',
     deliverables: ['Logo Design', 'Brand Colors', 'Typography', 'Pattern Design', 'Logo Variations', 'App Icon'],
     cover: {
-      src: '/projects/peakfit-fitness.jpg',
+      src: '/images/peakfit-fitness.jpg',
       alt: 'PeakFit Fitness brand board with logo variations, colors, typeface, pattern, and app icon',
       ratio: '8 / 7',
       tone: 'light',
@@ -61,7 +61,7 @@ export const projects = [
       'Social Media Marketing Graphics',
     ],
     cover: {
-      src: '/projects/urban-wear-ethiopia.jpg',
+      src: '/images/urban-wear-ethiopia.jpg',
       alt: 'Clothing brand promotional poster with product categories and outfit photos',
       ratio: '4 / 5',
       tone: 'dark',
@@ -85,7 +85,7 @@ export const projects = [
       'Social Media Marketing Graphics',
     ],
     cover: {
-      src: '/projects/eey-digital-agency.jpg',
+      src: '/images/eey-digital-agency.jpg',
       alt: 'Technology company promotional poster listing web, content, social media, video, and design services',
       ratio: '4 / 5',
       tone: 'dark',
@@ -103,7 +103,7 @@ export const projects = [
       'A modern brand identity designed for a delivery service, featuring a bold, custom-style GO4 logo and a vibrant orange color palette. The branding combines orange, black, and white to create a recognizable and energetic visual identity. The project includes logo variations, a defined color palette, an app icon concept, and real-world signage mockups, demonstrating how the brand can maintain consistency across digital and physical applications.',
     deliverables: ['Logo Design', 'Color Palette', 'Logo Variations', 'App Icon', 'Brand Mockups'],
     cover: {
-      src: '/projects/go4-delivery.jpg',
+      src: '/images/go4-delivery.jpg',
       alt: 'GO4 Delivery logo in several colorways with app icon, color palette, and storefront sign',
       ratio: '1080 / 1130',
       tone: 'light',
@@ -121,7 +121,7 @@ export const projects = [
       'A clean, technology-focused logo designed for a healthcare management system. The visual identity combines a blue gradient symbol with modern typography to communicate care, trust, and professionalism. The symbol integrates a stylized \u201cC\u201d with a speech-bubble-inspired form, suggesting communication and connected healthcare services. The blue color palette reinforces a calm, reliable, and professional brand image suitable for healthcare technology.',
     deliverables: ['Logo Design', 'Symbol Development', 'Typography', 'Color Selection'],
     cover: {
-      src: '/projects/carecentral.jpg',
+      src: '/images/carecentral.jpg',
       alt: 'CareCentral healthcare management system logo',
       ratio: '768 / 409',
       tone: 'light',
@@ -139,7 +139,7 @@ export const projects = [
       'A logo redesign project focused on refining Star Med\u2019s visual identity to create a cleaner, more professional, and recognizable brand image. The redesign aims to improve the logo\u2019s visual clarity and balance while maintaining its relevance to the healthcare field. The goal was to develop a polished identity suitable for use across digital platforms, official documents, and printed materials.',
     deliverables: ['Logo Redesign', 'Visual Identity Refinement', 'Brand Presentation'],
     cover: {
-      src: '/projects/starmed-trading.jpg',
+      src: '/images/starmed-trading.jpg',
       alt: 'Star Med logo with a blue star and a green medical cross',
       ratio: '5 / 3',
       tone: 'light',
@@ -162,7 +162,7 @@ export const projects = [
       'Hotel Marketing Graphics',
     ],
     cover: {
-      src: '/projects/bonroyal-hotel.jpg',
+      src: '/images/bonroyal-hotel.jpg',
       alt: 'Hotel weekend luxury getaway promotional poster with room and gym photos',
       ratio: '1 / 1',
       tone: 'dark',

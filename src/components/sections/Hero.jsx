@@ -20,11 +20,15 @@ export default function Hero() {
             {hero.availability}
           </p>
 
-          <h1
-            id="hero-heading"
-            className="mt-6 font-serif text-[2.75rem] leading-[1.02] tracking-[-0.02em] sm:text-6xl xl:text-[5rem]"
-          >
-            {site.name} <span className="text-accent">&mdash;</span> {hero.headline}
+          <h1 id="hero-heading" className="mt-6">
+            <span className="block font-serif text-[3rem] italic leading-[0.95] tracking-[-0.03em] text-highlight sm:text-7xl xl:text-[6.5rem]">
+              {site.name}
+            </span>
+            <span className="sr-only"> &mdash; </span>
+            <span aria-hidden="true" className="mt-6 block h-px w-16 bg-accent" />
+            <span className="mt-6 block max-w-2xl font-serif text-2xl font-light leading-snug tracking-[-0.01em] text-foreground/85 sm:text-3xl xl:text-[2.5rem]">
+              {hero.headline}
+            </span>
           </h1>
 
           <div className="mt-12 grid max-w-2xl gap-8 sm:grid-cols-[11rem_1fr]">
@@ -83,3 +87,4 @@ export default function Hero() {
     </section>
   )
 }
+
