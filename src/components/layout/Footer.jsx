@@ -57,11 +57,11 @@ export default function Footer() {
                       <span className="underline decoration-foreground/30 underline-offset-4">
                         {name}
                       </span>{' '}
-                      [{note}]
+                    
                     </a>
                   ) : (
                     <span className="text-sm text-muted/70">
-                      {name} [{note}]
+                      {name} 
                     </span>
                   )}
                 </li>

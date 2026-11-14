@@ -1,41 +1,43 @@
-﻿// Placeholder content: replace with verified details.
+﻿
 export const site = {
   name: 'Alferid Meded',
-  tagline: 'Studio Archive / 2026',
-  location: 'Addis Abeba Ethiopia', // placeholder
+  tagline: 'Graphic Designer / 2026',
+  location: 'Addis Ababa, Ethiopia',
 
   hero: {
     availability: "Let's Work Together",
     headline:
-      'Independent Designer shaping brand systems, tactile print, and expressive visual narratives.',
-    disciplines: ['Brand Identity', 'Typographic Systems', 'Editorial Art Direction'],
+      'I create meaningful visual identities and designs that help brands stand out.',
+    disciplines: [
+      'Brand Identity',
+      'Graphic Design',
+      'Social Media Design',
+    ],
     intro:
-      'Operating at the intersection of Swiss structural rigor and contemporary sensory restraint. Collaborating with independent studios, emerging founders, and cultural institutions globally.',
+      'I am an independent graphic designer based in Ethiopia, working with businesses, startups, and individuals to bring their ideas to life through thoughtful and creative design.',
     featured: {
-      label: 'Featured Project // OMER Digital Studio',
-      subtitle: 'Logo & Signage Mockup',
+      label: 'Featured Project / OMER Digital Studio',
+      subtitle: 'Logo Design & Signage Mockup',
     },
   },
 
   philosophy: {
-    label: 'Guiding Philosophy',
+    label: 'My Approach',
     quote: 'Design is relationships. Design is a relationship between form and content.',
     author: 'Paul Rand',
-    authorRole: 'American graphic designer',
+    authorRole: 'American Graphic Designer',
     intro:
-      'Working across independent studios, emerging founders, and cultural institutions to distill complex identities into enduring visual artifacts. Every project begins with rigorous typographic discipline and ends with tactile, memorable craft.',
+      'I believe good design is more than just making things look attractive. It is about understanding ideas, communicating clearly, and creating visuals that connect with people. I focus on creating designs that reflect each brand’s personality and purpose.',
     body:
-      'I reject transitory trends in favor of architectural systems: systems that age gracefully, adapt across mediums from printed paper to responsive screens, and resonate through considered detail.',
-    capabilitiesLabel: 'Primary Capabilities',
+      'My approach is to keep things simple, creative, and meaningful. Rather than following every design trend, I focus on creating work that feels right for each project and remains relevant over time.',
+    capabilitiesLabel: 'What I Do',
     capabilities: [
-      'Brand Positioning & Naming',
-      'Editorial & Publication Design',
-      'Creative & Art Direction',
-      'Bespoke Typography & Monograms',
-      'Packaging & Physical Goods',
-      'Digital Collateral & Motion',
+      'Logo Design & Brand Identity',
+      'Social Media & Poster Design',
+      'Typography & Layout Design',
+      'Visual Identity Systems',
+      'Print & Promotional Design',
+      'Creative Direction',
     ],
   },
 }
-
-

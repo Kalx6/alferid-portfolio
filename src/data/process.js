@@ -1,30 +1,30 @@
-﻿// Placeholder content from the Stitch mockup: confirm against the designer's real workflow.
+﻿
 export const processIntro = {
-  label: 'Methodology',
-  title: 'Rigorous process, disciplined outcomes.',
+  label: 'My Process',
+  title: 'From idea to finished design.',
   description:
-    'Each engagement follows four clearly articulated chapters to ensure conceptual clarity, aesthetic poise, and seamless technical production.',
+    'Every project starts with understanding your needs and goals. I follow four simple steps to turn your ideas into thoughtful and creative designs.',
 }
 
 export const processSteps = [
   {
-    title: 'Discovery & Typographic Audit',
+    title: 'Understanding Your Ideas',
     description:
-      'Deconstructing brand history, cultural context, competitive landscapes, and defining typographic parameters and narrative intentions.',
+      'I start by learning about your business, your goals, your audience, and what you want to achieve. This helps me understand your vision before starting the design.',
   },
   {
-    title: 'Territory Concepts & Direction',
+    title: 'Research & Initial Concepts',
     description:
-      'Developing 2-3 divergent visual paths presented through concrete artifact mockups, material palettes, and initial type specimen layouts.',
+      'I explore different ideas, gather inspiration, and develop initial design concepts. I share these directions with you so we can choose the one that best fits your vision.',
   },
   {
-    title: 'Form Development & Production',
+    title: 'Design & Refinement',
     description:
-      'Iterative crafting of marks, grid architectures, publication spreads, paper proofs, and production-ready packaging mechanicals.',
+      'Once we agree on a direction, I develop the design, improve the details, and make adjustments based on your feedback until everything comes together.',
   },
   {
-    title: 'System Delivery & Governance',
+    title: 'Final Delivery',
     description:
-      'Comprehensive asset packaging, digital brand portals, physical swatch catalogues, and rollout guidelines for internal execution.',
+      'After approval, I prepare and deliver the final design files in the required formats, ready for use across digital and print platforms.',
   },
 ]

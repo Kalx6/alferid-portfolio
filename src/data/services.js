@@ -1,45 +1,61 @@
-﻿// Placeholder content from the Stitch mockup: replace with verified services.
+﻿
 export const servicesIntro = {
-  label: 'Service Taxonomy',
-  title: 'Disciplines & Scope',
-  note: 'Engagements tailored for holistic brand launches or precise single-medium artifacts.',
+  label: 'What I Offer',
+  title: 'Design Services',
+  note: 'From building a brand identity to creating designs for your next campaign, I help bring your ideas to life.',
 }
 
 export const services = [
   {
     id: 'identity',
     number: '01',
-    tag: 'Identity',
-    title: 'Brand Identity Systems',
+    tag: 'Branding',
+    title: 'Logo & Brand Identity',
     description:
-      'Wordmarks, visual language, custom logotypes, comprehensive brand guidelines, color harmony theory, and tone-of-voice alignment.',
-    deliverables: ['Monogram Architecture', 'Design Standards Bible', 'Typography Licensing & Pairing'],
+      'I create logos and visual identities that represent your brand, communicate its personality, and help it stand out.',
+    deliverables: [
+      'Logo Design',
+      'Color Palette & Typography',
+      'Brand Identity Guidelines',
+    ],
   },
   {
-    id: 'publication',
+    id: 'social',
     number: '02',
-    tag: 'Publication',
-    title: 'Editorial & Publication Design',
+    tag: 'Social Media',
+    title: 'Social Media Design',
     description:
-      'Art catalogues, architectural monographs, quarterly periodicals, lookbooks, and high-spec bound volumes crafted with tactile paper curation.',
-    deliverables: ['Structural Grid Systems', 'Paper Stock & Binding Specification', 'Pre-Press Color Calibration'],
+      'I design attractive and consistent social media graphics that help businesses share their message and connect with their audience.',
+    deliverables: [
+      'Social Media Posts',
+      'Promotional Graphics',
+      'Social Media Templates',
+    ],
   },
   {
-    id: 'spatial',
+    id: 'poster',
     number: '03',
-    tag: 'Spatial',
-    title: 'Poster & Spatial Graphics',
+    tag: 'Print',
+    title: 'Poster & Flyer Design',
     description:
-      'Silkscreen posters, gallery exhibition identities, environmental wayfinding, large-format billboard collateral, and cultural ephemera.',
-    deliverables: ['Exhibition Scenography', 'Large-Scale Typography', 'Material & Substrate Consulting'],
+      'I create eye-catching posters and flyers for events, promotions, products, and business announcements.',
+    deliverables: [
+      'Promotional Posters',
+      'Event Flyers',
+      'Marketing Materials',
+    ],
   },
   {
-    id: 'digital',
+    id: 'creative',
     number: '04',
-    tag: 'Digital',
-    title: 'Digital & Kinetic Direction',
+    tag: 'Creative Design',
+    title: 'Custom Graphic Design',
     description:
-      'Digital showcase editorial websites, kinetic typography trailers, social campaign frameworks, and interactive visual narratives.',
-    deliverables: ['Responsive Layout Architecture', 'Kinetic Type Motion Design', 'Social Brand Toolkits'],
+      'I work on different graphic design projects based on your needs, creating visuals that communicate your ideas clearly and creatively.',
+    deliverables: [
+      'Business Graphics',
+      'Advertising Designs',
+      'Custom Visual Designs',
+    ],
   },
 ]
